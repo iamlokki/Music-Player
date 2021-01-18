@@ -1,0 +1,461 @@
+*{
+    margin: 0px;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px blue; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0e122e; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #151c47; 
+  }
+
+body{
+    background-color: #0e122e;
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .border{
+    border: 2px solid red;
+} */
+
+/* navigation section */
+
+.navbar{
+    display: flex;
+    width: 98vw;
+    height: 4rem;
+}
+
+.horrizontal-list{
+    list-style: none;
+    
+}
+
+.horrizontal-list li{
+    display: inline-block;
+    /* margin-left: 10px; */
+
+}
+
+.horrizontal-list li a{
+    text-decoration: none;
+}
+
+/* left section */
+
+#left-nav{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 2rem;
+    top: 0px;
+}
+
+.logo a{
+    /* border: 2px solid red; */
+    display: flex;
+    margin-left: -43px;
+    /* margin: 10px; */
+}
+
+.logo a p{
+    margin-top: 10px;
+}
+
+.icon{
+    /* border: 2px solid black; */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.icon i{
+    font-size: 3rem;
+    color: rgb(25, 97, 25);
+}
+
+.fav{
+    margin-left:3rem;
+    position: absolute;
+    top: 2rem;
+}
+
+/* right Section */
+
+#right-nav{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 2rem;
+    top: 0px;
+    
+}
+
+.search{
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+}
+
+.search input{
+    background-color: #151c47;
+}
+
+.bell-icon{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+}
+
+.dp{
+    border: 2px solid black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Body section */
+
+
+.body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+/* main section */
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* info box */
+
+.info-box{
+    width: 80vw;
+    height: 50vh;
+
+}
+
+.info-card{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.bio-image{
+    /* padding: 1rem; */
+    height: 100%;
+    width: 40%;
+}
+
+.bio-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.bio-box{
+    width:60%;
+    padding: 1rem;
+}
+
+.bio-box h3{
+    margin: 0.5rem;
+}
+
+.bio-box p{
+    margin: 0.5rem;
+}
+
+.play-all{
+    text-align: center;
+    height: 3rem;
+    width: 8rem;
+    background-image: linear-gradient(to bottom right,darkblue,purple);
+    color: white;
+}
+
+/* song list section */
+
+.song-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 80vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 2rem;
+}
+
+.song-box{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    background: rgba(24,24,24,0.5);
+}
+
+.left-side{
+    display: flex;
+    
+}
+
+.left-side img{
+    height: 4rem;
+    width: 3rem;
+    margin: 0px 0.8rem;
+}
+
+.left-side h3{
+    margin: 1rem 0px;
+}
+
+.center h4{
+    margin: 1rem 8rem;
+}
+
+.right-side{
+    height: 100%;
+
+}
+
+.right-side i{
+    margin: 1rem 4rem;
+    color: white;
+}
+
+/* side section */
+
+.side{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+/* similar artist section */
+
+.similar-artist{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 40vh;
+    width: 100%;
+}
+
+.artist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.media-object{
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    margin:0.5rem auto;
+}
+
+.media-object a{
+    text-decoration: none;
+}
+
+.media-object>a{
+    display: flex;
+    width: 6rem;
+    background-image: url(images/songcover.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 2s;
+}
+.media-object>a i{
+    margin: auto;
+    font-size: 1.6rem;
+    color: blanchedalmond;
+}
+
+.media-object>a:hover{
+    opacity: 0.85;
+}
+
+
+.media-body{
+    height: 5rem;
+    width: 13rem;
+    margin: auto 0px;
+    padding-left: 1rem;
+}
+
+.media-body a h4{
+    margin-bottom: 1rem;
+}
+
+.details{
+    padding-left: 15rem;
+}
+
+.more-options{
+    margin: 0.5rem -1px;
+}
+
+.circles{
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Queue section */
+
+.queue-browser{
+    /* display: flex; */
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.queue{
+    width: 100%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.queue-song{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.queue-song p{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+.queue-song a img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.queue-song a img:hover{
+    opacity: 0.8;
+    box-shadow:2px 2px 8px 3px #AAAAAA;
+}
+
+.queue-song i{
+    color: white;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.queue-song-object{
+    margin-left: 0.5rem;
+    width: 72%;
+    
+}
+
+/* music bar section */
+
+#music-bar{
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    transition: 2s all ease-in-out;
+}
+
+#music-bar:target{
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#music-bar audio{
+    width: 80%;
+    color: transparent;
+    position: fixed;
+    left: 10%;
+}
+
+
+/* media quary */
+
+@media only screen and (min-width: 950px){
+    /* info box */
+
+.info-box{
+    width: 55vw;
+
+}
+
+/* song list section */
+
+.song-list{
+    width: 55vw;
+}
+
+
+/* side section */
+
+.side{
+    width: 30vw;
+    margin-left: 2rem;
+}
+
+/* similar artist section */
+
+.media-body a h4{
+    margin-bottom: 0.3rem;
+}
+
+.details{
+    padding-left: 1.5rem;
+}
+
+.queue-song-object {
+    width: 60%;
+}
+
+}
